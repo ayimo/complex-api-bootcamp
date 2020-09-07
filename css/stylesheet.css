@@ -2,6 +2,37 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  background: rgba(255, 138, 138, 0.5);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+h1{
+    font-family: Aclonica, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(84, 84, 84, 0);
+    text-shadow: rgb(214, 0, 0) 2px 2px 2px;
+}
+
+input {
+     padding: 5px;
+     font-size: 16px;
+     border-width: 2px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: dotted;
+     border-radius: 13px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+
+input:focus {
+     outline:none;
+}
+
 .container{
   height: 100vh;
   display: flex;
@@ -26,6 +57,7 @@
     display: grid;
     justify-items: center;
     border: 2px solid yellow;
+    background: rgba(255, 242, 171, 0.5);
 }
 .infoContainer{
   width:100%;
@@ -35,6 +67,7 @@
   justify-content: center;
   gap: 15px;
   border: 2px solid orange;
+  background: rgba(255, 215, 171, 0.5);
 }
 .boxR{
   width:100%;
@@ -42,26 +75,48 @@
   flex-direction: column;
   justify-content: center;
   border: 2px solid purple;
+  background: rgba(171, 198, 255, 0.5);
 }
 h1{
   font-size: 3rem;
 }
 
-button{
-  font-size: 1.5rem;
-  padding:0.5rem 1rem 0.5rem 1rem;
-  border-radius: 10px;
+button {
+	box-shadow: 1px 4px 7px 1px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 27px;
+	text-decoration:none;
+	text-shadow:-4px 3px 5px #810e05;
   outline: none;
+  margin-bottom: 4%;
 }
-button:hover{
-  border: 3px solid crimson;
+button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
 }
+button:active {
+	position:relative;
+	top:1px;
+}
+
+p{
+  text-align: center;
+}
+
+
 img{
   height:350px;
   width:200px;
   display: none;
 }
-
 
 iframe{
   display:none;
